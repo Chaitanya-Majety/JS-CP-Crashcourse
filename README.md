@@ -1,1 +1,1 @@
-# JS-CP-Crashcourse
+# JavaScript-CP-learning
