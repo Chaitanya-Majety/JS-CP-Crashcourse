@@ -100,12 +100,12 @@ function rpsfrontend(humanimagechoice,botimagechoice,finalmessage){
     var msgdiv = document.createElement("div")
 
     humandiv.innerHTML = "<img src='" + imagedatabase[humanimagechoice] + "' height =150 width =150 style='box-shadow: 0px 10px 50px rgba(37,50,233,1);'>"
-    document.getElementById("flex-box-rps-div").append(humandiv)
+    document.getElementById("flex-box-rps-div").appendChild(humandiv)
 
     // in INNER HTML if style to be added through raw then ; is important after everthing in style
     msgdiv.innerHTML = "<h3 style='color:" + finalmessage["color"] + "; font-size:60px; padding:30px;'>" + finalmessage["message"] + "</h3>"
-    document.getElementById("flex-box-rps-div").append(msgdiv)
+    document.getElementById("flex-box-rps-div").appendChild(msgdiv)
 
     botdiv.innerHTML = "<img src='" + imagedatabase[botimagechoice] + "' height =150 width =150 style='box-shadow: 0px 10px 50px rgba(243,38,24,1);'>"
-    document.getElementById("flex-box-rps-div").append(botdiv)
+    document.getElementById("flex-box-rps-div").appendChild(botdiv)
 }
